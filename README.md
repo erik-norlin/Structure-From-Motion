@@ -36,11 +36,11 @@ Run the software with `main.py -dataset <dataset> -T_robust`. Use the `-dataset`
 
 ## Reconstruction Results
 
-Reconstructions for each dataset before and after LM optimization are available in the repository. The reconstructions visually improve after optimization, aligning point clouds more accurately. An example of how this software can reconstruct structure from motion:
+Reconstructions for each dataset before and after LM optimization are available in the repository. The reconstructions visually improve after optimization, aligning point clouds more accurately. An example of how this software can reconstruct structure from motion is this
 
 ![](https://github.com/erik-norlin/Structure-From-Motion/blob/main/reconstruction-plots/dataset_3_joined.png?raw=true)
+to this
 ![](https://github.com/erik-norlin/Structure-From-Motion/blob/main/reconstruction-plots/dataset_2_after_LM_2.png?raw=true)
-
 
 For each dataset, the reconstructions with non-robust translations generally show better results after LM optimization compared to reconstructions with robust translations.
 
