@@ -5,16 +5,16 @@ This repository contains a computer vision project implementing Structure from M
 ## Algorithm
 
 ### Rotation Averaging
-The algorithm estimates absolute rotations of cameras by chaining relative rotations of adjacent camera pairs. Essential matrices are robustly estimated using image correspondences obtained from SIFT points in a RANSAC loop. The rotation averaging is performed by decomposing the essential matrix using singular value decomposition.
+The algorithm estimates absolute rotations of cameras by chaining relative rotations of adjacent camera pairs. The rotations are obtained from robustly estimated essential matrices using image correspondences obtained from SIFT points in a RANSAC loop.
 
 ### Translation Registration
-An initial 3D reconstruction is triangulated with relative cameras and SIFT matches. Camera translations are robustly estimated in a RANSAC loop. The translations are obtained by solving a system of equations derived from the 3D point projections and the camera poses.
+An initial 3D reconstruction is triangulated with a camera pair with a sufficiently large base line and SIFT matches. Camera translations are robustly estimated in a RANSAC loop. The translations are obtained by solving a system of equations derived from 2D-3D corespondeces and absolute rotations.
 
 ### Camera Refinement
 The absolute rotations and translations are refined by minimizing the squared reprojection error using Levenberg-Marquardt (LM). The rotations are parametrized as quaternions to avoid singularities. The LM optimization is performed one camera at a time.
 
 ### Final 3D Reconstruction
-Two final 3D reconstructions are obtained by accumulating triangulated 3D points using cameras and image correspondences for each adjacent camera pair. One shows the reconstruction of the unrefined camera pairs, and the other shows the reconstruction of the refined camera pairs.
+Two final 3D reconstructions are obtained by accumulating triangulated 3D points using the refined cameras and image correspondences for each adjacent camera pair. One shows the reconstruction of the unrefined camera pairs, and the other shows the reconstruction of the refined camera pairs.
 
 ## Running the Software
 
@@ -32,7 +32,7 @@ The main files are:
 - `main.py`
 - `pipeline.py`
 
-Place these files in the working directory along with a `data` folder containing numerated sub-folders with datasets. Run the software with `main.py -dataset <dataset> -T_robust`. Use the `-dataset` flag to specify the dataset (an integer), and `-T_robust` as an optional flag for robust translation estimation.
+Run the software with `main.py -dataset <dataset> -T_robust`. Use the `-dataset` flag to specify the dataset (an integer), and `-T_robust` as an optional flag for robust translation estimation. Better 3D reconstructions are obtianed by leaving `-T_robust` out.
 
 ## Reconstruction Results
 
