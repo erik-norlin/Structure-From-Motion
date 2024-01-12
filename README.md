@@ -43,7 +43,7 @@ Reconstructions for each dataset before and after LM optimization are available 
 
 ### Without Robust Translations
 
-![Reconstruction Example]](https://github.com/erik-norlin/Structure-From-Motion/blob/main/reconstruction-plots/dataset_2_after_LM_2.png?raw=true)
+![Reconstruction Example](https://github.com/erik-norlin/Structure-From-Motion/blob/main/reconstruction-plots/dataset_2_after_LM_2.png?raw=true)
 ![](https://github.com/erik-norlin/TME290-Autonomous-Robots/blob/main/assignment3/Assignment3_Erik_Norlin/python_kinematic/plot/plots/path_taken.png?raw=true)
 
 
