@@ -18,7 +18,7 @@ Two final 3D reconstructions are obtained by accumulating triangulated 3D points
 
 ## Running the Software
 
-To run the software, make sure the following modules are installed (also contained in 'requirements.txt'):
+To run the software, make sure the following modules are installed (also contained in `requirements.txt`):
 - argparse
 - matplotlib
 - numpy
