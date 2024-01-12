@@ -42,7 +42,10 @@ Reconstructions for each dataset before and after LM optimization are available 
 - Figures: `dataset_2_before_LM_2_robust_T.png` to `dataset_9_after_LM_2_robust_T.png`
 
 ### Without Robust Translations
-- Figures: `dataset_2_before_LM_2.png` to `dataset_9_after_LM_2.png`
+
+![Reconstruction Example](https://github.com/erik-norlin/Structure-From-Motion/blob/main/reconstruction-plots/dataset_2_after_LM_2.png?raw=true)
+![](https://github.com/erik-norlin/TME290-Autonomous-Robots/blob/main/assignment3/Assignment3_Erik_Norlin/python_kinematic/plot/plots/path_taken.png?raw=true)
+
 
 For each dataset, the reconstructions with non-robust translations generally show better results after LM optimization compared to reconstructions with robust translations.
 
