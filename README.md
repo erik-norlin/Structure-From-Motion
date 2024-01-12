@@ -40,7 +40,7 @@ Reconstructions for each dataset before and after LM optimization are available 
 
 This sequence of images
 ![](https://github.com/erik-norlin/Structure-From-Motion/blob/main/reconstruction-plots/dataset_3_joined.png?raw=true)
-yields this 3D reconstruction 
+yields
 ![](https://github.com/erik-norlin/Structure-From-Motion/blob/main/reconstruction-plots/dataset_2_after_LM_2.png?raw=true)
 
 Further details about the implementation can be found in the code files.
