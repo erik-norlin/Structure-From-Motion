@@ -38,7 +38,7 @@ Run the software with `main.py -dataset=<dataset>`. Use the `-dataset` flag to s
 Reconstructions for each dataset before and after LM optimization are available in the repository. The reconstructions visually improve after optimization, aligning point clouds more accurately. The following is an example of how this software can reconstruct structure from motion.
 
 This sequence of images (dataset 3)
-![](https://github.com/erik-norlin/Structure-From-Motion/blob/main/data/4/dataset_4_joined.png=raw=true)
+![](https://github.com/erik-norlin/Structure-From-Motion/blob/main/data/4/dataset_4_joined.png?raw=true)
 yields
 ![](https://github.com/erik-norlin/Structure-From-Motion/blob/main/reconstruction-plots/dataset_3_after_LM_lstsq.png?raw=true)
 
